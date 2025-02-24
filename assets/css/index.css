@@ -1,17 +1,22 @@
 @font-face {
   font-family: "Gotham-Book";
-  src: url("../font/Gotham-Book.woff") format("woff2");
+  src: url("../font/Gotham-Book.woff") format("woff"),
+    url("../font/GothamBook.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Gotham-Black";
-  src: url("../font/Gotham-Black.otf");
+  src: url("../font/Gotham-Black.otf") format("opentype"),
+    url("../font/Gotham-Black.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gotham-Thin";
-  src: url("../font/Gotham-Thin.otf");
+  src: url("../font/Gotham-Thin.otf") format("opentype"),
+    url("../font/Gotham-Thin.woff") format("woff");
+  font-display: swap;
 }
 
 body {
@@ -55,6 +60,10 @@ p {
 
 .navbar {
   background-color: transparent;
+}
+
+.navbar .navbar-logo {
+  margin-top: 10px;
 }
 
 .navbar:hover {
@@ -185,7 +194,7 @@ select:focus {
 }
 
 .title {
-  font-family: 'Gotham-Black', sans-serif;
+  font-family: "Gotham-Black", sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
 }
@@ -213,7 +222,7 @@ select:focus {
 
 .text-thin strong {
   font-weight: 500;
-  font-family: 'Gotham-Book', sans-serif;
+  font-family: "Gotham-Book", sans-serif;
 }
 
 .badge-image {
@@ -289,12 +298,12 @@ select:focus {
 
 .pill-shaped .text-container .upper-text {
   font-size: 1.438rem;
-  font-family: 'Gotham-Book', sans-serif;
+  font-family: "Gotham-Book", sans-serif;
 }
 
 .pill-shaped .text-container .bottom-text {
   font-size: 1rem;
-  font-family: 'Gotham-Thin', sans-serif;
+  font-family: "Gotham-Thin", sans-serif;
 }
 
 .sign-up-section {
