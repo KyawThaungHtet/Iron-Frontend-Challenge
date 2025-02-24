@@ -261,7 +261,7 @@ select:focus {
 }
 
 .gradient-bg {
-  background: linear-gradient(122.46deg, #e01a59 -6.28%, #460a48 85.62%);
+  background: linear-gradient(120deg, #e01a59, #460a48);
   filter: blur(50px);
   height: 120px;
   left: 40px;
