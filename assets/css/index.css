@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Gotham-Book";
-  src: url('/assets/font/Gotham-Book.woff') format("woff2");
+  src: url("../font/Gotham-Book.woff") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Gotham-Black";
-  src: url("/assets/font/Gotham-Black.otf");
+  src: url("../font/Gotham-Black.otf");
 }
 
 @font-face {
-    font-family: "Gotham-Thin";
-    src: url('/assets/font/Gotham-Thin.woff');
+  font-family: "Gotham-Thin";
+  src: url("../font/Gotham-Thin.otf");
 }
 
 body {
   background: #402640;
   color: #fff;
-  font-family: 'Gotham-Book', sans-serif;
+  font-family: "Gotham-Book", sans-serif;
 }
 
 p {
@@ -34,12 +34,12 @@ p {
 }
 
 .text-soft {
-    color: #c6aac6;
+  color: #c6aac6;
 }
 
 .first-upper {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .first-upper .title-2 {
@@ -51,11 +51,6 @@ p {
 .first-upper span {
   font-size: 0.875rem;
   color: #8f618f;
-}
-
-.thin-text {
-  font-weight: 100!important;
-  font-family: 'Gotham-Thin', sans-serif!important;
 }
 
 .navbar {
@@ -103,7 +98,7 @@ p {
 }
 
 .gradient-banner .early-acces {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 .background-img {
@@ -132,7 +127,6 @@ p {
   border-radius: 50px;
 }
 
-
 .signup-btn input {
   margin-left: 10px;
   padding-left: 15px;
@@ -160,8 +154,8 @@ p {
 
 .signup-mobile-btn:active,
 .signup-btn button:active {
-    transform: scale(0.9);
-    background-color: rgb(126, 15, 48); 
+  transform: scale(0.9);
+  background-color: rgb(126, 15, 48);
 }
 
 .signup-mobile-btn:hover,
@@ -178,7 +172,7 @@ select:focus {
 }
 
 .rounded-tag {
-    max-width: 150px;
+  max-width: 150px;
   border-radius: 50px;
   background-color: #c6aac6;
   color: #8f618f;
@@ -191,12 +185,13 @@ select:focus {
 }
 
 .title {
+  font-family: 'Gotham-Black', sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
 }
 
 .second-section {
-    background: #2c0f29;
+  background: #2c0f29;
 }
 
 .early-access-section {
@@ -204,11 +199,21 @@ select:focus {
 }
 
 .second-section-bottom {
-  background: rgba(23, 6, 23, 30);
+  background: rgba(23, 6, 23, 0.3);
   font-weight: 100;
   letter-spacing: 0.1em;
   font-size: 1rem;
-  opacity: 0.7;
+}
+
+.text-thin {
+  font-weight: 100;
+  font-family: "Gotham-Thin", sans-serif !important;
+  color: #fff;
+}
+
+.text-thin strong {
+  font-weight: 500;
+  font-family: 'Gotham-Book', sans-serif;
 }
 
 .badge-image {
@@ -231,26 +236,26 @@ select:focus {
 }
 
 .divider {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: #402640;
-  }
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #402640;
+}
 
 .gradient-bg {
-    background: linear-gradient(122.46deg, #e01a59 -6.28%, #460a48 85.62%);
-    filter: blur(50px);
-    height: 120px;
-    left: 40px;
-    opacity: .9;
-    position: absolute;
-    z-index: -1;
-    top: 50px;
-    transform: skewY(20deg);
-    width: 250px;
+  background: linear-gradient(122.46deg, #e01a59 -6.28%, #460a48 85.62%);
+  filter: blur(50px);
+  height: 120px;
+  left: 40px;
+  opacity: 0.9;
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  transform: skewY(20deg);
+  width: 250px;
 }
 
 .pill-shaped {
@@ -284,10 +289,12 @@ select:focus {
 
 .pill-shaped .text-container .upper-text {
   font-size: 1.438rem;
+  font-family: 'Gotham-Book', sans-serif;
 }
 
 .pill-shaped .text-container .bottom-text {
   font-size: 1rem;
+  font-family: 'Gotham-Thin', sans-serif;
 }
 
 .sign-up-section {
@@ -305,8 +312,8 @@ select:focus {
 }
 
 .badge-text {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 1400px) {
@@ -328,7 +335,7 @@ select:focus {
 
   .navbar {
     background-color: #000;
-}
+  }
 
   .sign-up-section .signup-btn {
     min-width: 700px;
@@ -336,8 +343,6 @@ select:focus {
 }
 
 @media (max-width: 768px) {
-    
-
   .divider {
     display: none;
   }
@@ -348,20 +353,20 @@ select:focus {
 }
 
 @media (max-width: 576px) {
-    .title {
-        font-size: 2.188rem;
-    }
-
-    .first-upper .title-2 {
-        font-size: 2.2rem;
-    }
-
-    .badge-image {
-        top: -60px;
-        z-index: 1;
-    }
-
-    .sign-up-section .signup-btn {
-        min-width: auto;
-      }
+  .title {
+    font-size: 2.188rem;
   }
+
+  .first-upper .title-2 {
+    font-size: 2.2rem;
+  }
+
+  .badge-image {
+    top: -60px;
+    z-index: 1;
+  }
+
+  .sign-up-section .signup-btn {
+    min-width: auto;
+  }
+}
