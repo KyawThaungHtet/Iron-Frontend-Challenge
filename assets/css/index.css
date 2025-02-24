@@ -128,7 +128,7 @@ p {
 .signup-btn {
   max-width: 530px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 0px;
   min-height: 64px;
   background-color: #fff;
@@ -152,7 +152,6 @@ p {
 .signup-btn button,
 .signup-mobile-btn {
   background-color: #e01a59;
-  display: block;
   padding: 0px 25px;
   color: #fff;
   font-weight: bold;
