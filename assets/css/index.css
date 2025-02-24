@@ -228,9 +228,15 @@ select:focus {
 .badge-image {
   position: absolute;
   top: -50px;
-  right: -90px;
+  right: -85px;
   height: auto;
   z-index: 3;
+}
+
+
+.badge-text {
+  position: relative;
+  z-index: 2;
 }
 
 .image-wrapper {
@@ -320,10 +326,6 @@ select:focus {
   display: block;
 }
 
-.badge-text {
-  position: relative;
-  z-index: 2;
-}
 
 @media (max-width: 1400px) {
   .background-img {
@@ -371,7 +373,8 @@ select:focus {
   }
 
   .badge-image {
-    top: -60px;
+    top: -65px;
+    right: -60px;
     z-index: 1;
   }
 
