@@ -12,18 +12,31 @@ This project is a frontend implementation of IronPDF for C++'s beta program land
 - **CodeIgniter 4** (PHP framework for backend integration)
 - **JavaScript & AJAX** (Used for asynchronous requests)
 
+## ⚙️ Requirements
+
+Before setting up the project, ensure you have the following installed:
+- **PHP 7.4 or higher**
+- **Composer** (PHP dependency manager). If you don’t have Composer, install it from [getcomposer.org](https://getcomposer.org/).
+
 ## 📖 Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```sh
-   git clone https://github.com/KyawThaungHtet/Iron-Frontend-Challenge
+   git clone https://github.com/your-repo/frontend-challenge.git
    ```
-2. Navigate to the project folder:
+2. **Navigate to the project folder:**
    ```sh
-   cd Iron-Frontend-Challenge
+   cd frontend-challenge
    ```
-3. Run the CodeIgniter server:
+3. **Install dependencies using Composer:** (since `vendor/` is not included in the repo)
+   ```sh
+   composer install
+   ```
+4. **Run the CodeIgniter server:**
    ```sh
    php spark serve
    ```
-4. Open `http://localhost:8080` in your browser.
+5. **Open in your browser:**
+   ```
+   http://localhost:8080
+   ```
