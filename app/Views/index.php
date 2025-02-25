@@ -7,16 +7,16 @@
     <meta name="description" content="IronPDF for C++ - A powerful PDF generation library. Sign up for early access now!">
     <meta property="og:type" content="website">
     <meta name="keywords" content="IronPDF, C++, PDF library, Beta Program">
-    <link href="./assets/images/iron-software-favicon.png" rel="icon" type="image/png">
+    <link href="<?= base_url('./assets/images/iron-software-favicon.png') ?>" rel="icon" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/index.css') ?>">
 </head>
 <body>
-    <header class="header-section">
+<header class="header-section">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid d-flex">
                 <a class="navbar-logo" href="#">
-                    <img src="./assets/images/navbar-logo.svg" alt="IronSoftware Company Logo">
+                    <img src="<?= base_url('./assets/images/navbar-logo.svg') ?>" alt="IronSoftware Company Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
         </nav>
 
         <div class="first-upper container-md py-5">
-            <img src="./assets/images/ironpdf-banner.svg" alt="ironpdf-for-C++" loading="lazy">
+            <img src="<?= base_url('./assets/images/ironpdf-banner.svg') ?>" alt="ironpdf-for-C++" loading="lazy">
             <h6 class="pt-5"><strong>Building on the success of IronPDF for .NET</strong></h6>
             <h2 class="title-2">Beta Software Program</h2>
             <h2 class="title-2 text-soft">IronPDF for C++</h2>
@@ -52,29 +52,31 @@
             <div class="container-md second-upper">
                 <h1 class="title"><strong>Be one of the first</strong></h1>
                 <div class="early-access"><strong>Sign up NOW to get early access!</strong></div>
-                <div class="signup-btn d-flex mt-3">
-                    <input type="text" placeholder="Enter your email" class="flex-fill">
-                    <button type="button" class="ms-auto d-none d-md-block">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <form action="<?= base_url('signup') ?>" method="post">
+                    <div class="signup-btn d-flex mt-3">
+                        <input type="text" name="email" placeholder="Enter your email" class="flex-fill">
+                        <button type="submit" class="ms-auto d-none d-md-block">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></button>
+                    </div>
+                    <button type="submit" class="signup-mobile-btn my-3 d-block d-sm-block d-md-none">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                     </svg></button>
-                </div>
-                <button type="button" class="signup-mobile-btn my-3 d-block d-sm-block d-md-none">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg></button>
+                </form>
                 <div class="d-inline-flex py-3 gap-2 flex-column flex-md-row align-items-center">
                     <div class="rounded-tag"># Coming Soon</div>
                     <div class="text-thin text-center">IronPDF Beta Program also coming soon for <strong>Python</strong> <span>|</span> <strong>Node.JS</strong> <span>|</span> <strong>Java</strong></div>
                 </div>
             </div>
         </div>
-        <img src="./assets/images/bg-image.png" alt="Decorative Background" class="background-img" loading="lazy">
+        <img src="<?= base_url('./assets/images/bg-image.png') ?>" alt="Decorative Background" class="background-img" loading="lazy">
     </header>
 
     <section class="second-section">
         <div class="container-md pt-5">
             <div class="title text-center position-relative">
                 <div class="d-inline position-relative"> <span class="d-inline badge-text">IronPDF for C++</span>
-                    <img src="./assets/images/coming-soon-badge.svg" alt="Coming Soon Badge" class="badge-image">
+                    <img src="<?= base_url('./assets/images/coming-soon-badge.svg') ?>" alt="Coming Soon Badge" class="badge-image">
                 </div>
             </div>
             <div class="row my-5 justify-content-center text-center text-thin">
@@ -104,7 +106,7 @@
             <div class="row py-5">
                 <div class="col-lg-4 col-12 image-wrapper">
                     <div class="gradient-bg"></div>
-                    <img src="./assets/images/html-pdf.svg" alt="HTML to PDF icon">
+                    <img src="<?= base_url('./assets/images/html-pdf.svg') ?>" alt="HTML to PDF icon">
                 </div>
                 <div class="col-lg-7 col-12">
                     <h1 class="title">
@@ -152,19 +154,40 @@
         <div class="sign-up-section">
             <div class="container-md py-5 d-flex flex-column align-items-center">
                 <div class="title text-center">Sign up to our <span>Beta Program</span></div>
-                <div class="signup-btn d-flex mt-3 w-100">
-                    <input type="text" placeholder="Enter your email" class="flex-fill ">
-                    <button type="button" class="ms-auto d-none d-md-block">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <form action="<?= base_url('signup') ?>" method="post">
+                    <div class="signup-btn d-flex mt-3 w-100">
+                        <input type="text" name="email" placeholder="Enter your email" class="flex-fill ">
+                        <button type="submit" class="ms-auto d-none d-md-block">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg></button>
+                    </div>
+                    <button type="submit" class="signup-mobile-btn mt-3 d-block d-sm-block d-md-none">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                     </svg></button>
-                </div>
-                <button type="button" class="signup-mobile-btn mt-3 d-block d-sm-block d-md-none">Sign up now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg></button>
+                </form>
+                
             </div>
         </div>
     </section>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
 
+            fetch('<?= base_url('signup') ?>', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Thank you for signing up!');
+                } else {
+                    alert(data.message);
+                }
+            });
+        });
+    </script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
