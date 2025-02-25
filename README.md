@@ -22,13 +22,13 @@ Before setting up the project, ensure you have the following installed:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-repo/frontend-challenge.git
+   git clone https://github.com/KyawThaungHtet/Iron-Frontend-Challenge
    ```
 2. **Navigate to the project folder:**
    ```sh
    cd frontend-challenge
    ```
-3. **Install dependencies using Composer:** (since `vendor/` is not included in the repo)
+3. **Install dependencies using Composer:**
    ```sh
    composer install
    ```
