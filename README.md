@@ -9,24 +9,21 @@ This project is a frontend implementation of IronPDF for C++'s beta program land
 - **HTML5** (Latest version)
 - **CSS3** (Custom styles with Bootstrap 5.3.3)
 - **Bootstrap 5.3.3** (Used for responsive design and prebuilt components)
-- **No additional JavaScript or jQuery** (Bootstrap's built-in JS is utilized)
+- **CodeIgniter 4** (PHP framework for backend integration)
+- **JavaScript & AJAX** (Used for asynchronous requests)
 
 ## 📖 Setup Instructions
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/frontend-challenge.git
+   git clone https://github.com/KyawThaungHtet/Iron-Frontend-Challenge
    ```
 2. Navigate to the project folder:
    ```sh
-   cd frontend-challenge
+   cd Iron-Frontend-Challenge
    ```
-3. Open `index.html` in a browser.
-
-## 🚀 Live Preview
-🔗 [View Website](https://kyawthaunghtet.github.io/Iron-Frontend-Challenge/)
-
-
-## 🌐 Deployment
-
-This project can be deployed on **GitHub Pages**, **Netlify**, or any static hosting service.
+3. Run the CodeIgniter server:
+   ```sh
+   php spark serve
+   ```
+4. Open `http://localhost:8080` in your browser.
