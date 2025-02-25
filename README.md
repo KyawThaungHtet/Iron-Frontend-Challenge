@@ -26,7 +26,7 @@ Before setting up the project, ensure you have the following installed:
    ```
 2. **Navigate to the project folder:**
    ```sh
-   cd frontend-challenge
+   cd Iron-Frontend-Challenge
    ```
 3. **Install dependencies using Composer:**
    ```sh
